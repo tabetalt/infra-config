@@ -43,3 +43,12 @@ export const coreZone = 'tabetalt-no';
  * Default version
  */
 export const version = 'v1' || process.env.VERSION;
+
+/**
+ * Github Organization
+ */
+export const githubOrg = 'tabetalt';
+/**
+ * Github Admin
+ */
+export const githubAdmin = 'cobraz';
