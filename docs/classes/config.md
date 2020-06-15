@@ -35,7 +35,7 @@
 Name | Type | Default |
 ------ | ------ | ------ |
 `environment?` | undefined &#124; string | - |
-`withCoreStack` | boolean | false |
+`withCoreStack` | boolean | true |
 
 **Returns:** *[Config](config.md)*
 

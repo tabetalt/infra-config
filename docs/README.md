@@ -16,7 +16,10 @@
 
 * [adminEmail](README.md#const-adminemail)
 * [coreStackRef](README.md#const-corestackref)
+* [coreZone](README.md#const-corezone)
 * [folderId](README.md#const-folderid)
+* [githubAdmin](README.md#const-githubadmin)
+* [githubOrg](README.md#const-githuborg)
 * [organizationName](README.md#const-organizationname)
 * [primaryDomain](README.md#const-primarydomain)
 * [region](README.md#const-region)
@@ -47,11 +50,35 @@ Reference to core stack
 
 ___
 
+### `Const` coreZone
+
+• **coreZone**: *"tabetalt-no"* = "tabetalt-no"
+
+Core Managed Zone
+
+___
+
 ### `Const` folderId
 
-• **folderId**: *"92480390775"* = "92480390775"
+• **folderId**: *"folders/92480390775"* = "folders/92480390775"
 
 Google Cloud Platform Folder ID
+
+___
+
+### `Const` githubAdmin
+
+• **githubAdmin**: *"cobraz"* = "cobraz"
+
+Github Admin
+
+___
+
+### `Const` githubOrg
+
+• **githubOrg**: *"tabetalt"* = "tabetalt"
+
+Github Organization
 
 ___
 
@@ -65,7 +92,7 @@ ___
 
 ### `Const` primaryDomain
 
-• **primaryDomain**: *"{env}.tabetalt.no"* = "{env}.tabetalt.no"
+• **primaryDomain**: *"{env}.{version}.api.tabetalt.no"* = "{env}.{version}.api.tabetalt.no"
 
 Primary domain
 eg. {env}.tabetalt.no

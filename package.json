@@ -12,10 +12,16 @@
     "build": "tsc",
     "generate-docs": "typedoc --mode file --readme none --plugin typedoc-plugin-markdown --hideSources --out docs src"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn generate-docs && git add docs/"
+    }
+  },
   "files": [
     "dist/*"
   ],
   "devDependencies": {
+    "husky": "^4.2.5",
     "prettier": "^2.0.5",
     "typedoc": "^0.17.3",
     "typedoc-plugin-markdown": "^2.2.16",
