@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@pulumi/pulumi": "^2.0.0",
-    "@pulumi/vault": "^1.11.0"
+    "@pulumi/vault": "^1.11.0",
+    "@tabetalt/pulumix": "^1.0.0-alpha.4"
   }
 }
