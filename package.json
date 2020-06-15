@@ -1,0 +1,28 @@
+{
+  "name": "@tabetalt/devops-config",
+  "main": "dist/index.js",
+  "description": "[internal] DevOps Configuration for Tabetalt",
+  "license": "MIT",
+  "version": "1.0.0",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "generate-docs": "typedoc --mode file --readme none --plugin typedoc-plugin-markdown --hideSources --out docs src"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "typedoc": "^0.17.3",
+    "typedoc-plugin-markdown": "^2.2.16",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@pulumi/pulumi": "^2.0.0",
+    "@pulumi/vault": "^1.11.0"
+  }
+}
