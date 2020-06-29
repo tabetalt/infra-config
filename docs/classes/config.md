@@ -22,6 +22,7 @@
 ### Methods
 
 * [get](config.md#get)
+* [getProviderArgs](config.md#getproviderargs)
 * [parseConstant](config.md#parseconstant)
 
 ## Constructors
@@ -62,6 +63,24 @@ ___
 **Type parameters:**
 
 ▪ **K**: *string*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`key` | string |
+
+**Returns:** *OutputInstance‹any› | OutputInstance‹any› & object | OutputInstance‹any› & object | OutputInstance‹any› & object*
+
+___
+
+###  getProviderArgs
+
+▸ **getProviderArgs**‹**P**›(`key`: string): *OutputInstance‹any› | OutputInstance‹any› & object | OutputInstance‹any› & object | OutputInstance‹any› & object*
+
+**Type parameters:**
+
+▪ **P**
 
 **Parameters:**
 

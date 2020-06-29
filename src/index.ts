@@ -51,4 +51,12 @@ export class Config extends pulumix.helpers.Config {
       })()
     );
   }
+
+  getProviderArgs<P>(key: string) {
+    const providerArgs = this.stackRef.requireOutput(`provider-${key}`);
+    if (!providerArgs) {
+      throw new Error(`Could not find providerArgs: provider-${key}`);
+    }
+    return providerArgs;
+  }
 }

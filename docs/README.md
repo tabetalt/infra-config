@@ -44,7 +44,7 @@ ___
 
 ### `Const` coreStackRef
 
-• **coreStackRef**: *"tabetalt-core"* = "tabetalt-core"
+• **coreStackRef**: *"bjerk-simen/tabetalt-core"* = "bjerk-simen/tabetalt-core"
 
 Reference to core stack
 

@@ -1,7 +1,7 @@
 /**
  * Reference to core stack
  */
-export const coreStackRef = 'tabetalt-core';
+export const coreStackRef = 'bjerk-simen/tabetalt-core';
 
 /**
  * Primary domain
