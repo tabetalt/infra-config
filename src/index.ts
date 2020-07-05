@@ -1,5 +1,7 @@
 import * as pulumi from '@pulumi/pulumi';
 import * as pulumix from '@tabetalt/pulumix';
+import * as k8s from '@pulumi/kubernetes';
+import * as gcp from '@pulumi/gcp';
 import * as constants from './constants';
 
 type ConstantKeyType = keyof typeof constants;
@@ -11,8 +13,8 @@ export class Config extends pulumix.helpers.Config {
 
   constructor(environment?: string, withCoreStack = true) {
     super();
-    
-    this.environment = environment || pulumi.getStack();
+
+    this.environment = environment || pulumi.getStack();
 
     if (withCoreStack) {
       this.stackRef = new pulumi.StackReference(
@@ -45,7 +47,7 @@ export class Config extends pulumix.helpers.Config {
             return value;
           }
         }
-        if(this.stackRef) {
+        if (this.stackRef) {
           return this.stackRef.getOutput(key);
         }
         return false;
@@ -53,11 +55,19 @@ export class Config extends pulumix.helpers.Config {
     );
   }
 
-  getProviderArgs<P>(key: string) {
-    const providerArgs = this.stackRef.requireOutput(`provider-${key}`);
-    if (!providerArgs) {
-      throw new Error(`Could not find providerArgs: provider-${key}`);
-    }
-    return providerArgs;
+  getGCPProvider(): gcp.Provider {
+    const providerArgs = this.stackRef.requireOutput(`gcpProviderArgs`);
+    return new gcp.Provider('gcp-provider', {
+      project: providerArgs.apply((a) => a.project),
+      region: providerArgs.apply((a) => a.region),
+      zone: providerArgs.apply((a) => a.zone),
+    });
+  }
+
+  getK8SProvider(): k8s.Provider {
+    const providerArgs = this.stackRef.requireOutput(`k8sProviderArgs`);
+    return new k8s.Provider('k8s-provider', {
+      kubeconfig: providerArgs.apply((a) => a.kubeconfig),
+    });
   }
 }

@@ -79,6 +79,8 @@ ___
 
 ▸ **getGCPProvider**(): *Provider*
 
+*Overrides void*
+
 **Returns:** *Provider*
 
 ___
@@ -86,6 +88,8 @@ ___
 ###  getK8SProvider
 
 ▸ **getK8SProvider**(): *Provider*
+
+*Overrides void*
 
 **Returns:** *Provider*
 

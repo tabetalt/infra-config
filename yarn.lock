@@ -83,27 +83,27 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@pulumi/docker@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/docker/-/docker-1.5.0.tgz#7c284e7246921c672ef4959a8a193895d9797042"
-  integrity sha512-/uqQWYOG1AyjAr1ycDAVtzOHcoKnQW7PnmZ5ex0vYal12ajWQ5aKuHLpPHO5jzgVmOAnTst4D/EeTqSanBcHvQ==
+"@pulumi/docker@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@pulumi/docker/-/docker-2.2.3.tgz#5d3ecad832b43e3ab8c0ee782127c918412f30f4"
+  integrity sha512-dhrKyN3HLJk1nXjuy08edwYV44t+s+b9RzdTVetHaCd5xYflMVKzdB0L5JphAO0bPgWhQtHzzFvVy3avCl9kDQ==
   dependencies:
-    "@pulumi/pulumi" "^1.0.0"
+    "@pulumi/pulumi" "^2.0.0"
     semver "^5.4.0"
 
-"@pulumi/gcp@^3.1.0":
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/gcp/-/gcp-3.9.0.tgz#15db2263cbb935e728ad802165b7eb1909de65d6"
-  integrity sha512-kYP9SxBJe56IQHiup0GC8+gOQNo4MrJSp4Li/QHm40PLHT7HQqAVpZvwMdmKf1JOvG+ckXPuqwynHe+D1nnLVw==
+"@pulumi/gcp@^3.12.0":
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/gcp/-/gcp-3.12.0.tgz#ab3b38e2306a60055c22208edd45cc0b2257bd8c"
+  integrity sha512-MKh0eccbwYTGjRJ9OkWT/8RgkIoXHg1I/8KVIPaBp2AO0WgmWgJt7wW3ltcd71hCupWRUz4arqEQ2kelcrZqPw==
   dependencies:
     "@pulumi/pulumi" "^2.0.0"
     "@types/express" "^4.16.0"
     read-package-json "^2.0.13"
 
-"@pulumi/kubernetes@^2.0.0", "@pulumi/kubernetes@latest":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/kubernetes/-/kubernetes-2.3.0.tgz#5f80f5a01229a186e3ba09e8e74c9b9efa947422"
-  integrity sha512-7ovqH77sEyye2Vp2fGkWAAdZw91GINm3vuZNxLQ7Gpe5w7E39iXox2Qt3FxgOazMfpWeYZhm1ulMr9ydo0HeZg==
+"@pulumi/kubernetes@^2.3.1", "@pulumi/kubernetes@latest":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@pulumi/kubernetes/-/kubernetes-2.3.1.tgz#18cd3f95827cb22c8de0b15f6015c5f4c523110e"
+  integrity sha512-XHNcX49vhinll8d/pR8+EvNdAfMPXfldwe3/y0z4S2nd57dPnnrRaAGmHV7cqZOzu2ZGQUVbnWfd0z8vS9bYMA==
   dependencies:
     "@pulumi/pulumi" "^2.0.0"
     "@types/glob" "^5.0.35"
@@ -142,10 +142,29 @@
     typescript "~3.7.3"
     upath "^1.1.0"
 
-"@pulumi/pulumi@^2.0.0", "@pulumi/pulumi@latest":
+"@pulumi/pulumi@^2.0.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-2.4.0.tgz#27485fe2335e75635018a9d627b851e661042b3f"
   integrity sha512-ZIcZnPZyGA3Yjj5POFDK7ioQXEWAsibgZvD4QXxw+FFb8N3a5WogVIaAHh5+h3bMi+o4PQVTavTs51HIKRWzHg==
+  dependencies:
+    "@grpc/grpc-js" "^0.6.15"
+    "@pulumi/query" "^0.3.0"
+    google-protobuf "^3.5.0"
+    minimist "^1.2.0"
+    normalize-package-data "^2.4.0"
+    protobufjs "^6.8.6"
+    read-package-tree "^5.3.1"
+    require-from-string "^2.0.1"
+    semver "^6.1.0"
+    source-map-support "^0.4.16"
+    ts-node "^7.0.1"
+    typescript "~3.7.3"
+    upath "^1.1.0"
+
+"@pulumi/pulumi@^2.5.0", "@pulumi/pulumi@latest":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-2.5.0.tgz#a25307e04c8631adde9b91246cd8d5cc7375bf5a"
+  integrity sha512-936vZEqLIHzg6NY7X7CFgMzYaX+iTr9UjakSxxlZd0TiDtWdbOAhJkE/e4GnUQhtZ+nAc/nnzVCJkmQytvXK9A==
   dependencies:
     "@grpc/grpc-js" "^0.6.15"
     "@pulumi/query" "^0.3.0"
@@ -166,10 +185,10 @@
   resolved "https://registry.yarnpkg.com/@pulumi/query/-/query-0.3.0.tgz#f496608e86a18c3dd31b6c533408e2441c29071d"
   integrity sha512-xfo+yLRM2zVjVEA4p23IjQWzyWl1ZhWOGobsBqRpIarzLvwNH/RAGaoehdxlhx4X92302DrpdIFgTICMN4P38w==
 
-"@pulumi/random@^2.0.0":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@pulumi/random/-/random-2.1.2.tgz#d3dd7639238a8470d8a5400cb841ccd0661126c7"
-  integrity sha512-vK3GTvZ6zHW7sPKoQw1VSmbsnRncI1gsAHrLrF2VQAY3NB2pNLWl8orLoCpEpOyveDWe2htspPdXyf3wjb9W7Q==
+"@pulumi/random@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@pulumi/random/-/random-2.1.4.tgz#13587b25ffae15053276379ef14367871cbe818c"
+  integrity sha512-yJ65mOIHrxheR0MPZU1OUkY8IQfgcKfEEsV70hcG53hamkIy0GZ9XXZuli28CADwFO5lumm98Sl7bO4MdiNhpw==
   dependencies:
     "@pulumi/pulumi" "^2.0.0"
 
@@ -180,18 +199,26 @@
   dependencies:
     "@pulumi/pulumi" "^1.0.0"
 
-"@tabetalt/pulumix@^1.0.0-alpha.4":
-  version "1.0.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/@tabetalt/pulumix/-/pulumix-1.0.0-alpha.4.tgz#ecbe01b566797479c0dece4be62f99627da697dc"
-  integrity sha512-511xwdD42n/bZP/cpXszEZd2Gl0nlC1hPCNQJeCmB3uaoDSSHpC7svSSpziVPR4pkMOJMAoOY7/8iG+zeShAQg==
+"@pulumi/vault@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@pulumi/vault/-/vault-2.2.1.tgz#a0709d07eb23b8e5079d4fccdafc83aa43598fcf"
+  integrity sha512-faDm75UxfQFPWR0F0hafU+uIF726p0dOH8cuFgI0GnkR0xiikM6f8HOMy4mRxxkDGiBiZTUGUJaNbmBzfniLNQ==
   dependencies:
-    "@pulumi/docker" "^1.5.0"
-    "@pulumi/gcp" "^3.1.0"
-    "@pulumi/kubernetes" "^2.0.0"
-    "@pulumi/kubernetesx" "^0.1.3"
     "@pulumi/pulumi" "^2.0.0"
-    "@pulumi/random" "^2.0.0"
-    "@pulumi/vault" "^1.11.0"
+
+"@tabetalt/pulumix@1.0.0-alpha.7":
+  version "1.0.0-alpha.7"
+  resolved "https://registry.yarnpkg.com/@tabetalt/pulumix/-/pulumix-1.0.0-alpha.7.tgz#08b45102da7c1d8db8c8b3658b25271d91603d38"
+  integrity sha512-DptLCo2Wgpr6jCghnNpcz3KzjFqk/Fo374afD8VkqCufWwxulSA9n0ysjNFCZ4y4ejTn3/GUC0jgErciRbAfwA==
+  dependencies:
+    "@pulumi/docker" "^2.2.3"
+    "@pulumi/gcp" "^3.12.0"
+    "@pulumi/kubernetes" "^2.3.1"
+    "@pulumi/kubernetesx" "^0.1.3"
+    "@pulumi/pulumi" "^2.5.0"
+    "@pulumi/random" "^2.1.4"
+    "@pulumi/vault" "^2.2.1"
+    semver "^7.3.2"
 
 "@types/body-parser@*":
   version "1.19.0"
@@ -1466,6 +1493,11 @@ semver@^6.1.0, semver@^6.2.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
+
+semver@^7.3.2:
+  version "7.3.2"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.2.tgz#604962b052b81ed0786aae84389ffba70ffd3938"
+  integrity sha512-OrOb32TeeambH6UrhtShmF7CRDqhL6/5XpPNp2DuRH6+9QLw/orhp72j87v8Qa1ScDkvrrBNpZcDejAirJmfXQ==
 
 set-blocking@~2.0.0:
   version "2.0.0"
