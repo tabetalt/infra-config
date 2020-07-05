@@ -36,6 +36,7 @@ export class Config extends pulumix.helpers.Config {
   get<K extends string = string>(key: string) {
     return pulumi.output(
       (async () => {
+        key = key.replace(":", "_");
         if (constants.hasOwnProperty(key)) {
           const value = constants[key as ConstantKeyType];
           if (typeof value === 'string') {

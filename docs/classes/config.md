@@ -22,7 +22,8 @@
 ### Methods
 
 * [get](config.md#get)
-* [getProviderArgs](config.md#getproviderargs)
+* [getGCPProvider](config.md#getgcpprovider)
+* [getK8SProvider](config.md#getk8sprovider)
 * [parseConstant](config.md#parseconstant)
 
 ## Constructors
@@ -74,21 +75,19 @@ Name | Type |
 
 ___
 
-###  getProviderArgs
+###  getGCPProvider
 
-▸ **getProviderArgs**‹**P**›(`key`: string): *OutputInstance‹any› | OutputInstance‹any› & object | OutputInstance‹any› & object | OutputInstance‹any› & object*
+▸ **getGCPProvider**(): *Provider*
 
-**Type parameters:**
+**Returns:** *Provider*
 
-▪ **P**
+___
 
-**Parameters:**
+###  getK8SProvider
 
-Name | Type |
------- | ------ |
-`key` | string |
+▸ **getK8SProvider**(): *Provider*
 
-**Returns:** *OutputInstance‹any› | OutputInstance‹any› & object | OutputInstance‹any› & object | OutputInstance‹any› & object*
+**Returns:** *Provider*
 
 ___
 
