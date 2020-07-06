@@ -2,6 +2,7 @@ import * as pulumi from '@pulumi/pulumi';
 import * as pulumix from '@tabetalt/pulumix';
 import * as k8s from '@pulumi/kubernetes';
 import * as gcp from '@pulumi/gcp';
+import * as vault from '@pulumi/vault';
 import * as constants from './constants';
 
 type ConstantKeyType = keyof typeof constants;
@@ -68,6 +69,13 @@ export class Config extends pulumix.helpers.Config {
     const providerArgs = this.stackRef.requireOutput(`k8sProviderArgs`);
     return new k8s.Provider('k8s-provider', {
       kubeconfig: providerArgs.apply((a) => a.kubeconfig),
+    });
+  }
+
+  getVaultProvider(): k8s.Provider {
+    const address = this.stackRef.requireOutput(`vaultAddr`);
+    return new vault.Provider('vault-provider', {
+      address
     });
   }
 }

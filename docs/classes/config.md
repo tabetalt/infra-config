@@ -24,6 +24,7 @@
 * [get](config.md#get)
 * [getGCPProvider](config.md#getgcpprovider)
 * [getK8SProvider](config.md#getk8sprovider)
+* [getVaultProvider](config.md#getvaultprovider)
 * [parseConstant](config.md#parseconstant)
 
 ## Constructors
@@ -90,6 +91,14 @@ ___
 ▸ **getK8SProvider**(): *Provider*
 
 *Overrides void*
+
+**Returns:** *Provider*
+
+___
+
+###  getVaultProvider
+
+▸ **getVaultProvider**(): *Provider*
 
 **Returns:** *Provider*
 
