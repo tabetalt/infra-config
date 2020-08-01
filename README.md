@@ -1,4 +1,4 @@
-# Tabetalt DevOps Config
+![Tabetalt Infra Config](.github/assets/header.jpg)
 
 This is an repository for internal configuration classes used with [@tabetalt/pulumix](https://github.com/tabetalt/pulumix).
 
