@@ -4,6 +4,11 @@
 export const coreStackRef = 'bjerk-simen/tabetalt-core';
 
 /**
+ * Core GCP Project
+ */
+export const coreGCPProject = 'tabetalt-core';
+
+/**
  * Primary domain
  * eg. {env}.tabetalt.no
  */
@@ -48,7 +53,13 @@ export const version = 'v1' || process.env.VERSION;
  * Github Organization
  */
 export const githubOrg = 'tabetalt';
+
 /**
  * Github Admin
  */
 export const githubAdmin = 'cobraz';
+
+/**
+ * Docker registry
+ */
+export const dockerRegistry = `eu.gcr.io/${coreGCPProject}`;
