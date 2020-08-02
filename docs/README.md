@@ -15,8 +15,10 @@
 ### Variables
 
 * [adminEmail](README.md#const-adminemail)
+* [coreGCPProject](README.md#const-coregcpproject)
 * [coreStackRef](README.md#const-corestackref)
 * [coreZone](README.md#const-corezone)
+* [dockerRegistry](README.md#const-dockerregistry)
 * [folderId](README.md#const-folderid)
 * [githubAdmin](README.md#const-githubadmin)
 * [githubOrg](README.md#const-githuborg)
@@ -42,6 +44,14 @@ Default administrator email
 
 ___
 
+### `Const` coreGCPProject
+
+• **coreGCPProject**: *"tabetalt-core"* = "tabetalt-core"
+
+Core GCP Project
+
+___
+
 ### `Const` coreStackRef
 
 • **coreStackRef**: *"bjerk-simen/tabetalt-core"* = "bjerk-simen/tabetalt-core"
@@ -55,6 +65,14 @@ ___
 • **coreZone**: *"tabetalt-no"* = "tabetalt-no"
 
 Core Managed Zone
+
+___
+
+### `Const` dockerRegistry
+
+• **dockerRegistry**: *string* = `eu.gcr.io/${coreGCPProject}`
+
+Docker registry
 
 ___
 
